@@ -72,10 +72,10 @@ namespace Sitecore.Commerce.Connect.DynamicsRetail.Pipelines.Inventory
                 stockInfo.Count = stockInfo.Count + 1000000;
                 stockInfo.Status = Sitecore.Commerce.Entities.Inventory.StockStatus.InStock;
 
-                //stockInfos.Add(stockInfo);
+                stockInfos.Add(stockInfo);
             }
 
-            //result.StockInformation = stockInfos;
+            result.StockInformation = stockInfos;
             result.Success = true;
         }
 
